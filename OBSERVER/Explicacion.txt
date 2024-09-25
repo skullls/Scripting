@@ -1,0 +1,4 @@
+IObserver: Interfaz que define el método Actualizar, que será llamado para notificar cambios.
+Subject: Mantiene una lista de observadores y les notifica cuando su estado cambia. Incluye métodos para suscribirse y desuscribirse.
+ObservadorConcreto: Implementa IObserver y define la acción a tomar al recibir una notificación, en este caso, imprimir un mensaje en la consola.
+Main: Crea instancias de Subject y observadores, los suscribe y cambia el estado del Subject, lo que genera las notificaciones.
