@@ -41,3 +41,13 @@ namespace Observador
 
         public void Actualizar(string mensaje) => Console.WriteLine($"{_nombre} ha recibido: {mensaje}");
     }
+
+    // Clase principal
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+        }
+    }
+
