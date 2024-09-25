@@ -1,0 +1,2 @@
+Employee: Esta clase maneja únicamente la información y las operaciones relacionadas con el empleado, como actualizar el salario.
+EmployeeReportPrinter: Esta clase se encarga de imprimir un informe del empleado. Si las reglas de impresión cambian, solo esta clase necesitaría modificaciones, no la clase Employee.
