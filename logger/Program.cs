@@ -9,7 +9,7 @@ class Program
         PatronLogger logger = PatronLogger.Instance("log.txt");
         
         // Escribir mensaje
-        logger.Write("HolaMundoooo");
+        logger.Write("SegundaPrueba2222");
 
         // Mensaje de confirmación
         Console.WriteLine("Mensaje registrado en el archivo de log.");
