@@ -1,0 +1,3 @@
+El patrón Strategy se usa para calcular el precio de la bebida dependiendo de su tamaño.
+Las estrategias (PrecioPequeno, PrecioMediano, PrecioGrande) definen diferentes formas de calcular el precio.
+La clase Cafe usa la estrategia seleccionada para calcular el costo en base a un precio base.
