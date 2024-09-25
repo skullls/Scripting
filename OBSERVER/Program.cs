@@ -18,5 +18,10 @@ namespace Observador
         public void Suscribir(IObserver observador) => _observadores.Add(observador);
         public void Desuscribir(IObserver observador) => _observadores.Remove(observador);
 
+        public void CambiarEstado(string nuevoEstado)
+        {
+            _estado = nuevoEstado;
+            Notificar();
+        }
     }
 
