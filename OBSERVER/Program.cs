@@ -32,3 +32,12 @@ namespace Observador
 
     }
 
+    // Clase concreta que implementa IObserver
+    public class ObservadorConcreto : IObserver
+    {
+        private string _nombre;
+
+        public ObservadorConcreto(string nombre) => _nombre = nombre;
+
+        public void Actualizar(string mensaje) => Console.WriteLine($"{_nombre} ha recibido: {mensaje}");
+    }
