@@ -11,4 +11,23 @@ public class PatronLogger
     {
         _filePath = filePath;
     }
+
+    public static PatronLogger Instance(string filePath)
+{
+    // Verificar si la instancia ya existe
+    if (_instance == null)
+    {
+        lock (_lock)
+        {
+            // Asegurarse de que sólo una instancia sea creada
+            if (_instance == null)
+            {
+                _instance = new PatronLogger(filePath);
+            }
+        }
+    }
+    return _instance;
 }
+
+}
+
