@@ -47,7 +47,10 @@ namespace Observador
     {
         static void Main(string[] args)
         {
-            
+            Subject subject = new Subject();
+            ObservadorConcreto observador1 = new ObservadorConcreto("Observador 1");
+            ObservadorConcreto observador2 = new ObservadorConcreto("Observador 2");
+
         }
     }
 
