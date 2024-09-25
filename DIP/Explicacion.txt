@@ -1,0 +1,2 @@
+INotificacion: Es la abstracción que permite cambiar el tipo de notificación (correo o SMS) sin afectar al controlador.
+ControladorDeNotificaciones: No depende directamente de CorreoElectronico o SMS, sino de la interfaz INotificacion, lo que facilita el intercambio de implementaciones.
