@@ -29,5 +29,16 @@ public class PatronLogger
     return _instance;
 }
 
+
+public void Mensaje(string message)
+{
+
+        using (StreamWriter writer = new StreamWriter(_filePath, true))
+        {
+            writer.WriteLine($"{DateTime.Now}: {message}");
+        }
+    
+}
+
 }
 
