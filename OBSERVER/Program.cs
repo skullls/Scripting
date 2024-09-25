@@ -51,6 +51,11 @@ namespace Observador
             ObservadorConcreto observador1 = new ObservadorConcreto("Observador 1");
             ObservadorConcreto observador2 = new ObservadorConcreto("Observador 2");
 
+            subject.Suscribir(observador1);
+            subject.Suscribir(observador2);
+
+            subject.CambiarEstado("Nuevo estado 1");
+            subject.CambiarEstado("Nuevo estado 2");
         }
     }
 
