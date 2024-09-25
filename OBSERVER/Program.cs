@@ -23,5 +23,12 @@ namespace Observador
             _estado = nuevoEstado;
             Notificar();
         }
+
+         private void Notificar()
+        {
+            foreach (var observador in _observadores)
+                observador.Actualizar(_estado);
+        }
+
     }
 
