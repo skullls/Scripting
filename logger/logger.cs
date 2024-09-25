@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 
 public class PatronLogger
 {
@@ -29,7 +30,7 @@ public class PatronLogger
     return _instance;
 }
 
-
+// METODO DE ESCRITURA
 public void Write(string message)
 {
 
