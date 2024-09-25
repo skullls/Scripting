@@ -30,14 +30,20 @@ public class PatronLogger
 }
 
 
-public void Mensaje(string message)
+public void Write(string message)
 {
 
+    try
+    {
         using (StreamWriter writer = new StreamWriter(_filePath, true))
         {
             writer.WriteLine($"{DateTime.Now}: {message}");
         }
-    
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error al escribir en el archivo: {ex.Message}");
+    }
 }
 
 }
