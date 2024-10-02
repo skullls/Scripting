@@ -1,2 +1,2 @@
-Forma: Es una clase abstracta que define el método Area(), el cual las clases que heredan de ella deben implementar. Esto permite que nuevas formas puedan extender la clase sin modificarla.
+ Forma: Es una clase abstracta que define el método Area(), el cual las clases que heredan de ella deben implementar. Esto permite que nuevas formas puedan extender la clase sin modificarla.
 Circulo y Rectangulo: Son clases que heredan  de Forma y sobreescriben el método Area() para calcular sus respectivas áreas. Si necesitamos agregar nuevas formas geométricas, solo creamos una nueva clase sin modificar las existentes.
